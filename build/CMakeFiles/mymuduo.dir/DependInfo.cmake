@@ -8,8 +8,11 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/chipen/Code/myMuduo/Channel.cc" "CMakeFiles/mymuduo.dir/Channel.o" "gcc" "CMakeFiles/mymuduo.dir/Channel.o.d"
+  "/home/chipen/Code/myMuduo/EventLoop.cc" "CMakeFiles/mymuduo.dir/EventLoop.o" "gcc" "CMakeFiles/mymuduo.dir/EventLoop.o.d"
   "/home/chipen/Code/myMuduo/InetAddress.cc" "CMakeFiles/mymuduo.dir/InetAddress.o" "gcc" "CMakeFiles/mymuduo.dir/InetAddress.o.d"
   "/home/chipen/Code/myMuduo/Logger.cc" "CMakeFiles/mymuduo.dir/Logger.o" "gcc" "CMakeFiles/mymuduo.dir/Logger.o.d"
+  "/home/chipen/Code/myMuduo/TcpServer.cc" "CMakeFiles/mymuduo.dir/TcpServer.o" "gcc" "CMakeFiles/mymuduo.dir/TcpServer.o.d"
   "/home/chipen/Code/myMuduo/Timestamp.cc" "CMakeFiles/mymuduo.dir/Timestamp.o" "gcc" "CMakeFiles/mymuduo.dir/Timestamp.o.d"
   )
 
