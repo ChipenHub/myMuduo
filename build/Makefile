@@ -130,6 +130,21 @@ mymuduo/fast:
 .PHONY : mymuduo/fast
 
 # target to build an object file
+InetAddress.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/InetAddress.o
+.PHONY : InetAddress.o
+
+# target to preprocess a source file
+InetAddress.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/InetAddress.i
+.PHONY : InetAddress.i
+
+# target to generate assembly for a file
+InetAddress.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/InetAddress.s
+.PHONY : InetAddress.s
+
+# target to build an object file
 Logger.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/Logger.o
 .PHONY : Logger.o
@@ -168,6 +183,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... mymuduo"
+	@echo "... InetAddress.o"
+	@echo "... InetAddress.i"
+	@echo "... InetAddress.s"
 	@echo "... Logger.o"
 	@echo "... Logger.i"
 	@echo "... Logger.s"

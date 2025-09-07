@@ -25,13 +25,13 @@ std::string Timestamp::toString() const {
 }
 
 
-#include <iostream>
-
-int main() {
-
-    std::cout << Timestamp::now().toString() << std::endl;
-
-    return 0;
-}
+//#include <iostream>
+//
+//int main() {
+//
+    //std::cout << Timestamp::now().toString() << std::endl;
+//
+    //return 0;
+//}
 
 
