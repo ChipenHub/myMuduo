@@ -68,10 +68,8 @@ void EPollPoller::removeChannel(Channel *channel) {
     int index = channel->index();
     
     channels_.erase(fd);
-
     if (index == kAdded) update(EPOLL_CTL_DEL, channel);
     channel->set_index(kNew);
-
 }
 
 // fill active connection
