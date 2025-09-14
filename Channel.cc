@@ -22,13 +22,12 @@ void Channel::tie(const std::shared_ptr<void> &obj) {
 // when the state of Channel->fd_ was changed, update() will called to call epoll_ctl
 void Channel::update() {
     // call poller by EventLoop
-    // add Code ...
-    // loop->updateChannel(this);
+    loop_->updateChannel(this);
 }
 
 // delete current channel
 void Channel::remove() {
-    // add Code ...
+    loop_->removeChannel(this);
 }
 
 void Channel::handleEvent(Timestamp receiveTime) {
@@ -41,7 +40,7 @@ void Channel::handleEvent(Timestamp receiveTime) {
     } else {
 
         handleEventWithGuard(receiveTime);
-
+        
     }
 
 }

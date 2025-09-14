@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/chipen/Code/myMuduo/Channel.cc" "CMakeFiles/mymuduo.dir/Channel.o" "gcc" "CMakeFiles/mymuduo.dir/Channel.o.d"
+  "/home/chipen/Code/myMuduo/CurrentThread.cc" "CMakeFiles/mymuduo.dir/CurrentThread.o" "gcc" "CMakeFiles/mymuduo.dir/CurrentThread.o.d"
   "/home/chipen/Code/myMuduo/DefaultPoller.cc" "CMakeFiles/mymuduo.dir/DefaultPoller.o" "gcc" "CMakeFiles/mymuduo.dir/DefaultPoller.o.d"
   "/home/chipen/Code/myMuduo/EPollPoller.cc" "CMakeFiles/mymuduo.dir/EPollPoller.o" "gcc" "CMakeFiles/mymuduo.dir/EPollPoller.o.d"
   "/home/chipen/Code/myMuduo/EventLoop.cc" "CMakeFiles/mymuduo.dir/EventLoop.o" "gcc" "CMakeFiles/mymuduo.dir/EventLoop.o.d"
