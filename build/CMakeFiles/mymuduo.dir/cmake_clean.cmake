@@ -11,6 +11,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/mymuduo.dir/EPollPoller.o.d"
   "CMakeFiles/mymuduo.dir/EventLoop.o"
   "CMakeFiles/mymuduo.dir/EventLoop.o.d"
+  "CMakeFiles/mymuduo.dir/EventLoopThread.o"
+  "CMakeFiles/mymuduo.dir/EventLoopThread.o.d"
   "CMakeFiles/mymuduo.dir/InetAddress.o"
   "CMakeFiles/mymuduo.dir/InetAddress.o.d"
   "CMakeFiles/mymuduo.dir/Logger.o"
@@ -19,6 +21,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/mymuduo.dir/Poller.o.d"
   "CMakeFiles/mymuduo.dir/TcpServer.o"
   "CMakeFiles/mymuduo.dir/TcpServer.o.d"
+  "CMakeFiles/mymuduo.dir/Thread.o"
+  "CMakeFiles/mymuduo.dir/Thread.o.d"
   "CMakeFiles/mymuduo.dir/Timestamp.o"
   "CMakeFiles/mymuduo.dir/Timestamp.o.d"
 )

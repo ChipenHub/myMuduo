@@ -73,6 +73,7 @@ void EventLoop::loop() {
     LOG_INFO("Eventloop %p stop looping.\n", this);
     looping_ = false;
 }
+
 void EventLoop::quit() {
     quit_ = true;
 
