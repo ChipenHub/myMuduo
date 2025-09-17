@@ -22,14 +22,12 @@ Acceptor::Acceptor(EventLoop *loop, const InetAddress &listenAddr, bool reusepor
     // TcpServer::start(), Acceptor.listen() operate callback
     acceptChannel_.setReadCallback(std::bind(&Acceptor::handleRead, this));
 }
-Acceptor::~Acceptor() {}
-void listen();
 void Acceptor::handleRead() {
     InetAddress peerAddr;
     int connfd = acceptSocket_.accept(&peerAddr);
     if (connfd >= 0) {
         if (NewConnectionCallback_) {
-            NewConnectionCallback_(connfd, peerAddr);
+            NewConnectionCallback_(connfd, peerAddr); // polling while subloop was found wakeup give away the new-arranged channel
         } else {
             ::close(connfd);
         }
@@ -37,4 +35,12 @@ void Acceptor::handleRead() {
         LOG_ERROR("%s:%s:%d accept socket create error: %d", __FILE__, __FUNCTION__, __LINE__, errno);
     }
 }
-
+Acceptor::~Acceptor() {
+    acceptChannel_.disableall();
+    acceptChannel_.remove();
+}
+void Acceptor::listen() {
+    listening_ = true;
+    acceptSocket_.listen();
+    acceptChannel_.enableReading();
+}
