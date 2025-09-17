@@ -18,6 +18,8 @@ Acceptor::Acceptor(EventLoop *loop, const InetAddress &listenAddr, bool reusepor
     , acceptSocket_(createNonblocking())
     , acceptChannel_(loop, acceptSocket_.fd())
     , listening_(false) {
+    acceptSocket_.setReusePort(true);
+    acceptSocket_.setReuseAddr(true);
     acceptSocket_.bindAddress(listenAddr);
     // TcpServer::start(), Acceptor.listen() operate callback
     acceptChannel_.setReadCallback(std::bind(&Acceptor::handleRead, this));
