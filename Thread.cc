@@ -18,7 +18,7 @@ Thread::~Thread() {
     }
 }
 
-void Thread::started() { // a thread object ==> record a new thread's details
+void Thread::start() { // a thread object ==> record a new thread's details
     started_ = true;
     sem_t sem;
     sem_init(&sem, false, 0);

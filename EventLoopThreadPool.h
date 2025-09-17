@@ -10,7 +10,7 @@ class EventLoopThread;
 
 class EventLoopThreadPool : noncopyable {
 public:
-    using ThreadInitCallback = std::function<void()>;
+    using ThreadInitCallback = std::function<void(EventLoop *)>;
 
     EventLoopThreadPool(EventLoop *baseloop_, const std::string &nameArg);
     ~EventLoopThreadPool();
