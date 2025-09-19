@@ -23,13 +23,13 @@ public:
         kReusePort,
     };
 
-    TcpServer(EventLoop *loop, const InetAddress & listenAddr, Option option = kNoReusePort);
+    TcpServer(EventLoop* loop, const InetAddress& listenAddr, const std::string nameArg, Option option = kNoReusePort);
     ~TcpServer();
 
-    void setThreadInitCallback(const ThreadInitCallback& cb) { ThreadInitCallback_ = cb; }
-    void setConnectionCallback(const ConnectionCallback& cb) { ConnectionCallback_ = cb; }
-    void setMessageCallback(const MessageCallback& cb) { MessageCallback_ = cb; }
-    void setWriteCompleteCallback(const WriteCompleteCallback& cb) { WriteCompleteCallback_ = cb; }
+    void setThreadInitCallback(const ThreadInitCallback& cb) { threadInitCallback_ = cb; }
+    void setConnectionCallback(const ConnectionCallback& cb) { connectionCallback_ = cb; }
+    void setMessageCallback(const MessageCallback& cb) { messageCallback_ = cb; }
+    void setWriteCompleteCallback(const WriteCompleteCallback& cb) { writeCompleteCallback_ = cb; }
 
 
 
@@ -50,10 +50,10 @@ private:
     std::unique_ptr<Acceptor> acceptor_;    // run on mainloop, monitoring new events
     std::shared_ptr<EventLoopThreadPool> threadPool_;   // one loop per thread
     
-    ConnectionCallback ConnectionCallback_;
-    MessageCallback MessageCallback_;
-    WriteCompleteCallback WriteCompleteCallback_;
-    ThreadInitCallback ThreadInitCallback_;
+    ConnectionCallback connectionCallback_;
+    MessageCallback messageCallback_;
+    WriteCompleteCallback writeCompleteCallback_;
+    ThreadInitCallback threadInitCallback_;
 
     std::atomic_int started_;
     int nextConnId_;

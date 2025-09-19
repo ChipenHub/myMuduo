@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/chipen/Code/myMuduo/Acceptor.cc" "CMakeFiles/mymuduo.dir/Acceptor.o" "gcc" "CMakeFiles/mymuduo.dir/Acceptor.o.d"
+  "/home/chipen/Code/myMuduo/Buffer.cc" "CMakeFiles/mymuduo.dir/Buffer.o" "gcc" "CMakeFiles/mymuduo.dir/Buffer.o.d"
   "/home/chipen/Code/myMuduo/Channel.cc" "CMakeFiles/mymuduo.dir/Channel.o" "gcc" "CMakeFiles/mymuduo.dir/Channel.o.d"
   "/home/chipen/Code/myMuduo/CurrentThread.cc" "CMakeFiles/mymuduo.dir/CurrentThread.o" "gcc" "CMakeFiles/mymuduo.dir/CurrentThread.o.d"
   "/home/chipen/Code/myMuduo/DefaultPoller.cc" "CMakeFiles/mymuduo.dir/DefaultPoller.o" "gcc" "CMakeFiles/mymuduo.dir/DefaultPoller.o.d"
@@ -20,6 +21,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/chipen/Code/myMuduo/Logger.cc" "CMakeFiles/mymuduo.dir/Logger.o" "gcc" "CMakeFiles/mymuduo.dir/Logger.o.d"
   "/home/chipen/Code/myMuduo/Poller.cc" "CMakeFiles/mymuduo.dir/Poller.o" "gcc" "CMakeFiles/mymuduo.dir/Poller.o.d"
   "/home/chipen/Code/myMuduo/Socket.cc" "CMakeFiles/mymuduo.dir/Socket.o" "gcc" "CMakeFiles/mymuduo.dir/Socket.o.d"
+  "/home/chipen/Code/myMuduo/TcpConnection.cc" "CMakeFiles/mymuduo.dir/TcpConnection.o" "gcc" "CMakeFiles/mymuduo.dir/TcpConnection.o.d"
   "/home/chipen/Code/myMuduo/TcpServer.cc" "CMakeFiles/mymuduo.dir/TcpServer.o" "gcc" "CMakeFiles/mymuduo.dir/TcpServer.o.d"
   "/home/chipen/Code/myMuduo/Thread.cc" "CMakeFiles/mymuduo.dir/Thread.o" "gcc" "CMakeFiles/mymuduo.dir/Thread.o.d"
   "/home/chipen/Code/myMuduo/Timestamp.cc" "CMakeFiles/mymuduo.dir/Timestamp.o" "gcc" "CMakeFiles/mymuduo.dir/Timestamp.o.d"

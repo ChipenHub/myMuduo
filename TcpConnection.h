@@ -1,3 +1,9 @@
 #pragma once
 
-class TcpConnection {};
+class Channel;
+class EventLoop;
+class Socket;
+
+class TcpConnection {
+    
+};
